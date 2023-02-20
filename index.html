@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NAruto Website Landing Page</title>
+<!--CSS Link-->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="sec">
+       <header>
+        <a href="#"><img src="Naruto-PhotoRoom.png-PhotoRoom.png" class="logo"><a>
+      <nav class="nav__container">
+        <ul class="ul__nav">
+            <li ><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Characters</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>  
+
+      </nav> 
+       </header> 
+       <div class="content">
+         <div class="textBox">
+          <h2>That's what<br><span> I like</span></h2>  
+          <p>Naruto is a story about a boy, a resident of the Hidden Leaf Village, 
+            who witnessed pain since he was born and strives hard to achieve recognition
+             in his own village by vowing to himself to become the village leader. 
+             He shares a friendly relation with another kid Sasuke who is a genius
+              unlike him who wishes to avenge the death of his clan by killing his elder brother..</p>
+             <a href="#">View All Products</a>
+         </div>
+         <div class="imgBox">
+            <img src="Landing.png" class="Narutos">
+         </div>
+       </div>
+       <ul class="thumb">
+        <li><img src="Naruto2.png" onclick="imgSlider('Naruto2.png');changeBgcolor('linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(161,160,59,1) 96%)')"></li>
+        <li><img src="Sasuke.png" onclick="imgSlider('Sasuke.png');changeBgcolor('linear-gradient(90deg, rgba(109,38,120,1) 59%, rgba(97,94,94,1) 100%)')"></li>
+        <li><img src="Itachi.png" onclick="imgSlider('Itachi.png');changeBgcolor('linear-gradient(90deg, rgba(224,40,27,1) 0%, rgba(0,0,0,1) 52%)')"></li>
+       </ul>
+       <ul class ="sci">
+        <li ><a href="#"><img src="facebook.png"></a></li>
+        <li ><a href="#"><img src="twitter.png"></a></li>
+        <li ><a href="#"><img src="instagram.png"></a></li>
+       </ul>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything){
+        document.querySelector('.Narutos').src= anything;
+      }
+      function changeBgcolor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+
+      }
+    </script>
+</body>
+</html>
